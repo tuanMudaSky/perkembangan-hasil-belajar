@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project HTML</title>
+    <link rel="stylesheet" href="projectHtml.css" />
+</head>
+
+<body>
+
+    <div class="divHtml">
+        <!-- video -->
+        <ul class="satuan">
+            <h2 class="Judul">Menampilkan Video</h2>
+            <video controls autoplay muted preload="metadata" height="190px">
+                <source src="video/video.mp4" type="video/mp4" />
+                Maaf, browser anda tidak mendukung file mp4
+            </video>
+        </ul>
+        <!-- video end -->
+
+        <!-- audio -->
+        <ul class="satuan">
+            <h2 class="Judul">Menampilkan Audio</h2>
+            <audio controls preload="auto">
+                <source src="audio/audio.mp3" type="audio/mpeg" />
+                Maaf, browser anda tidak mendukung mp3
+            </audio>
+        </ul>
+        <!-- audio end -->
+
+        <!-- download -->
+        <ul class="satuan">
+            <h2 class="Judul">Download</h2>
+            <a href="gambar/html.png" id="download" download>Download di sini</a>
+        </ul>
+        <!-- download end -->
+
+        <!-- formulir -->
+        <ul class="satuan">
+            <h2 class="Judul">Formulir</h2>
+            <form action="submit-article" method="POST" enctype="multipart/form-data">
+                <!-- pengirim formulir -->
+                <label class="formulir" for="Nama">Nama pengirim :</label>
+                <input type="text" id="Nama" name="Nama" required>
+                <br><br>
+                <!-- isi formulir -->
+                <label class="formulir" for="saran">Saran untuk saya :</label>
+                <textarea id="masukan" name="masukan" rows="5" cols="40 required"></textarea>
+                <br><br>
+                <!-- masukkan gambar -->
+                <label class="formulir" for="gambar">Kirim gambar</label>
+                <input type="file" id="kirimGambar" name="kirimGambar" accept="image/*">
+                <br><br>
+                <!-- tombol kirim -->
+                <button type="submit">Kirim masukan</button>
+            </form>
+        </ul>
+        <!-- formulir end -->
+
+    </div>
+
+</body>
+
+</html>
